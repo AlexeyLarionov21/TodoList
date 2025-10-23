@@ -1,7 +1,4 @@
-// Тип не импортируем из store, чтобы избежать циклической зависимости
-type RootState = {
-  todoList: unknown;
-};
+import { RootState } from "../store";
 
 export const saveToLocalStorage = (state: RootState) => {
   try {
