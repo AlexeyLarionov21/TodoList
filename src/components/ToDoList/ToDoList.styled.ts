@@ -11,4 +11,5 @@ export const ToDoList = styled.ul`
   margin-bottom: 20px;
   padding-left: 0;
   list-style: none;
+  shadow: 1px;
 `;

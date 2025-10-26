@@ -1,20 +1,22 @@
 import styled from "styled-components";
+import { Theme } from "../../../models/theme";
 
-export const ToDoItem = styled.li`
+export const ToDoItem = styled.li<{ theme: Theme }>`
   width: 100%;
   min-height: 50px;
   font-size: 14px;
   font-weight: 500;
-  color: #444;
+  color: ${({ theme }) => theme.colors.text};
   line-height: 22px;
 
   display: flex;
   justify-content: space-between;
 
-  background: #fff;
+  background: ${({ theme }) =>
+    theme.name === "light" ? `white` : theme.colors.tips};
   border-radius: 5px;
   position: relative;
-  box-shadow: 0 1px 2px rgba(44, 62, 80, 0.1);
+  box-shadow: 0 2px 3px rgba(44, 62, 80, 0.1);
   margin: 0 0 10px 0;
   padding: 14px;
   word-break: break-word;

@@ -1,10 +1,8 @@
 .header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
   height: 50px;
-  background-color: #4682b4;
+  background-color: #12be37;
+  margin-bottom: 10px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
 }
@@ -22,16 +20,16 @@
 .link {
   text-decoration: none;
   padding: 10px;
-  color: #fff;
+  color: #fdf35f;
 }
 
 .active {
-  color: #ffffff33;
+  color: #ffffff;
 }
 
 .toggleButton {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
 }

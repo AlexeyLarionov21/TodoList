@@ -12,9 +12,11 @@ export const Layout = () => {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Header />
-        <Outlet />
+        <div className="content">
+          <GlobalStyle />
+          <Header />
+          <Outlet />
+        </div>
       </ThemeProvider>
     </>
   );
